@@ -1,4 +1,43 @@
 # -*- coding: utf8 -*- 
+
+#On affiche une information avec la fonction print()
+#Pour passer à la ligne on peut écrire \n
+
+print("Coucou c'est \n suspens...")
+
+
+
+
+### TYPES D'OBJET
+#Il existe plusieurs types d'objets.
+#Les nombres : integer =>  nb entier ( 2, 4, 27) , float => nombre décimaux ( 1.2, 4.7; 27.34)
+#les booléens : True or False, ils indiquent si une information est vrai ou fausse
+#les string : chaîne de caractère, à mettre entre "" pour éviter d'échapper le caractère ' qui peut poser soucis. 
+#les listes : ce sont des tableaux [], ils sont indéxés à 0.
+#les tuples : c'est une liste de données immuables, aucune entrées ne pourra être modifiées. ( "un", "deux")
+#les dictionnaires : Un dictionnaire en python est une sorte de liste mais au lieu d'utiliser des index , on utilise des clés alphanumériques.
+
+
+
+
+#NUMBER METHOD
+
+
+
+#is_integer est la plus classique elle permet de vérifier si un nombre est entier ou non
+
+print((2.17).is_integer())
+
+# x= number
+#int(x) et float(x) peuvent convertir le type d'un nombre.
+
+
+
+
+#STRING METHOD
+
+
+
 #Définir une fonction qui permet de prendre des paramètres pour rendre l'affichage et le formatage dynamique
 
 def create_message(character, quote):
@@ -36,3 +75,44 @@ print(big_word.lower())
 hey = "hello world "
 
 print(hey.capitalize())
+
+
+
+#LIST METHOD
+
+friends = [ "Monia", "Antho", "Kahina", "Said", "Mathilde", "Thomas", "Abdou", "Helder", "Bertrand", "Sandy"]
+
+#index est une méthode qui prend en paramètre l'élèment recherché et renvoie l'index ou il se trouve
+print(friends.index("Sandy"))
+
+#append permet d'ajouter un élèment à la liste
+friends.append("Manon")
+print(friends)
+
+#insert permer d'indiquer à quel index vous souhaiter ajouter un élèment
+friends.insert(6, "Seb")
+print(friends)
+
+#pour modifier une valeur grâce à l'index :
+friends[11] = "Marc"
+print(friends)
+
+#pop permet de supprimer le dernier élèment de la liste
+friends.pop()
+print(friends)
+
+#remove permet de supprimer la première valeur trouvée qui correspond au paramètre
+friends.remove("Said")
+print(friends)
+
+
+
+
+#DICT METHOD
+
+So_family {"husband": "Jf"}, {"Kid 1" : "Germaine"}
+print(So_family)
+#update permet de mettre à jour plusieurs informations
+
+
+So_family.update({"husband" : "JF", "Kid 1" : "Shelly-Ann"} )
