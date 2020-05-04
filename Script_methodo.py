@@ -110,9 +110,21 @@ print(friends)
 
 #DICT METHOD
 
-So_family {"husband": "Jf"}, {"Kid 1" : "Germaine"}
+So_family= {"husband": "Jf","Kids" : [ "Germaine"]}
 print(So_family)
-#update permet de mettre à jour plusieurs informations
 
+#update permet de mettre à jour une ou plusieurs valeurs en même temps
+So_family.update({"husband" : "JF", "Kids" : ["Shelly-Ann"]} )
+print(So_family)
 
-So_family.update({"husband" : "JF", "Kid 1" : "Shelly-Ann"} )
+#pop pour supprimer un élément
+So_family.pop("husband")
+print(So_family)
+
+#pour ajouter un élément dans un dictionnaire
+So_family["husband"] = "JF"
+print(So_family)
+
+#pour ajouter un élément  à une liste dans un dictionnaire
+So_family.update({"Kids" : ["Shelly-Ann","Soann" ]})
+print(So_family)
